@@ -6,6 +6,9 @@ set(PROJECT_NAME "CMakeDxLibSample")
 # slnを設定する
 project(${PROJECT_NAME} CXX)
 
+# ConfigurationはDebugとReleaseに限定
+set(CMAKE_CONFIGURATION_TYPES "Debug" "Release")
+
 # WinMainはSubSystemがWindowsである必要がある
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS")
 
