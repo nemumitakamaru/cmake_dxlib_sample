@@ -14,9 +14,10 @@ SET(DxLib_DIR "C:/DxLib")
 
 # インクルードパスの設定
 include_directories(${DxLib_DIR})
+include_directories(Source)
 
 # ライブラリパスの設定
 link_directories(${DxLib_DIR})
 
-# sourceディレクトリを追加
+add_subdirectory(source/Utility)
 add_subdirectory(source)
