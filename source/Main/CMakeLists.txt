@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6)
 
-set(SOURCE_FILES Main.cpp)
+file(GLOB SOURCE_FILES *.cpp)
 
 # exeのプロジェクトの指定
 add_executable(Main ${SOURCE_FILES})
